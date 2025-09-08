@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a1a1a;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.logo span {
+    color: #00ff88;
+}
+
+.search {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.profile {
+    color: #999;
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    padding: 30px;
+}
+
+.poster img {
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    margin-left: 30px;
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.episodes {
+    color: #bbb;
+}
+
+.tags span {
+    background: #333;
+    color: #0f0;
+    margin-right: 10px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.85em;
+}
+
+.description {
+    margin: 20px 0;
+    color: #aaa;
+}
+
+
+.watch-box {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.progress {
+    background: #333;
+    height: 6px;
+    border-radius: 6px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: #00ff88;
+}
+
+.seasons h4 {
+    margin-bottom: 10px;
+}
+
+.season-cards {
+    display: flex;
+    gap: 15px;
+}
+
+.season-card img {
+    width: 120px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.season-card img:hover {
+    transform: scale(1.05);
+}
+
+
+.characters {
+    padding: 30px;
+}
+
+.characters h3 {
+    margin-bottom: 20px;
+}
+
+.char-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.char-card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+
+.char-card:hover {
+    background: #222;
+}
+
+.char-card strong {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.anime-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.anime-card img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #333;
+}
+
+.anime-card:hover {
+    transform: scale(1.05);
+}
