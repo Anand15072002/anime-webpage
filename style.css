@@ -90,101 +90,73 @@ body {
     color: #aaa;
 }
 
-
-.watch-box {
-    background: #1a1a1a;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-}
-
-.progress {
-    background: #333;
-    height: 6px;
-    border-radius: 6px;
-    margin: 8px 0;
-    overflow: hidden;
-}
-
-.progress span {
-    display: block;
-    height: 100%;
-    background: #00ff88;
-}
-
-.seasons h4 {
-    margin-bottom: 10px;
-}
-
-.season-cards {
-    display: flex;
-    gap: 15px;
-}
-
-.season-card img {
-    width: 120px;
-    border-radius: 10px;
-    transition: transform 0.2s ease;
-}
-
-.season-card img:hover {
-    transform: scale(1.05);
-}
-
-
-.characters {
-    padding: 30px;
-}
-
-.characters h3 {
-    margin-bottom: 20px;
-}
-
-.char-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.char-card {
-    background: #1a1a1a;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    transition: background 0.2s ease;
-}
-
-.char-card:hover {
-    background: #222;
-}
-
-.char-card strong {
-    color: #fff;
-    display: block;
-    margin-bottom: 5px;
-}
 .anime-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
 }
 
 .anime-card {
     background: #1a1a1a;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform .18s ease, box-shadow .18s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .anime-card img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     display: block;
-    border-bottom: 1px solid #333;
+}
+
+.anime-card p {
+    padding: 10px;
+    font-size: 0.95em;
+    color: #eee;
+    margin-top: auto;
 }
 
 .anime-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+#episodes-container {
+    padding: 10px 0;
+    color: #ddd;
+}
+
+.loading-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.spinner {
+    border: 4px solid #333;
+    border-top: 4px solid #ffcc00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 10px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.message {
+    padding: 12px;
+    background: #1b1b1b;
+    border-radius: 8px;
+    color: #f0f0f0;
+    margin: 10px 0;
 }

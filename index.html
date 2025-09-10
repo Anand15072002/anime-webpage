@@ -1,98 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Streaming - My Hero Academia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anime Streaming</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <header class="navbar">
-        <div class="logo">Anime<span>HD</span></div>
-        <input type="text" class="search" placeholder="Search Anime">
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Anime List</a>
-            <a href="#">New Seasons</a>
-            <a href="#">Popular</a>
-        </nav>
-        <div class="profile">●●●</div>
-    </header>
+  <header class="navbar">
+    <div class="logo">Anime<span>HD</span></div>
+    <input type="text" class="search" placeholder="Search Anime..." />
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Anime List</a>
+      <a href="#">New Seasons</a>
+      <a href="#">Popular</a>
+    </nav>
+    <div class="profile">●●●</div>
+  </header>
+
+  <main class="container">
+    <div class="poster">
+      <img id="featured-img" src="anime.png" alt="Featured Poster" />
+    </div>
+    <div class="content">
+      <h2>My Hero Academia (S1)</h2>
+      <p class="episodes">EP 24 · 24m</p>
+      <div class="tags">
+        <span>SUB</span><span>HD</span><span>DUB</span>
+      </div>
+      <p class="description">
+        The appearance of “quirks,” newly discovered super powers, has been steadily increasing over the years...
+      </p>
+    </div>
+  </main>
 
 
-    <main class="container">
+  <section>
+    <h3>🔥 Trending Anime</h3>
+    <div id="trending-list" class="anime-grid"><p>Loading...</p></div>
+  </section>
 
-        <div class="poster">
-            <img src="anime.png" alt="My Hero Academia Poster">
-        </div>
+  <section>
+    <h3>🔎 Search Results</h3>
+    <div id="search-list" class="anime-grid"></div>
+  </section>
 
-        <div class="content">
-            <h2>My Hero Academia (S1)</h2>
-            <p class="episodes">EP 24 · 24m</p>
-            <div class="tags">
-                <span>SUB</span>
-                <span>HD</span>
-                <span>DUB</span>
-            </div>
+  <section>
+    <h3>📺 Episodes</h3>
+    <div id="episodes-container"></div>
+  </section>
 
-            <p class="description">
-                The appearance of “quirks,” newly discovered super powers, has been steadily increasing over the years,
-                with 80 percent of humanity possessing them...
-            </p>
+  <section>
+    <h3>📚 All Anime</h3>
+    <div id="anime-list" class="anime-grid"></div>
+    <div id="loading-spinner" class="loading-box" style="display:none;">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </section>
 
-
-            <div class="watch-box">
-                <h4>Continue Watching</h4>
-                <div class="progress">
-                    <span style="width: 60%;"></span>
-                </div>
-                <p>EP 11 | EP 24</p>
-            </div>
-
-
-            <div class="seasons">
-                <h4>Season Two</h4>
-                <div class="season-cards">
-                    <div class="season-card"><img src="season2.jpg" alt=""></div>
-                    <div class="season-card"><img src="season2.jpg" alt=""></div>
-                    <div class="season-card"><img src="season2.jpg" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <section class="characters">
-        <h3>Characters & Voice Actors</h3>
-        <div class="char-grid">
-            <div class="char-card">
-                <p><strong>Midoriya, Izuku</strong></p>
-                <p>Yamashita, Daiki</p>
-            </div>
-            <div class="char-card">
-                <p><strong>All Might</strong></p>
-                <p>Miyake, Kenta</p>
-            </div>
-            <div class="char-card">
-                <p><strong>Katsuki Bakugou</strong></p>
-                <p>Kaito Ishikawa</p>
-            </div>
-            <div class="char-card">
-                <p><strong>Tenya Iida</strong></p>
-                <p>Yamashita, Daiki</p>
-            </div>
-            <div class="char-card">
-                <p><strong>Ochako Uraraka</strong></p>
-                <p>Ayane Sakura</p>
-            </div>
-            <div class="char-card">
-                <p><strong>Shouta Aizawa</strong></p>
-                <p>Junichi Suwabe</p>
-            </div>
-        </div>
-    </section>
+  <script src="script.js"></script>
 </body>
-
 </html>
